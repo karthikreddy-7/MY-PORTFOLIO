@@ -5,7 +5,6 @@ import { Navbar } from "./components";
 import "./App.scss";
 import { inject } from "@vercel/analytics";
 import { Analytics } from "@vercel/analytics/react";
-inject();
 function App() {
   inject();
   return (
