@@ -6,18 +6,21 @@ import "./App.scss";
 import { inject } from "@vercel/analytics";
 import { Analytics } from "@vercel/analytics/react";
 inject();
-const App = () => (
-  <div className="app">
-    <Analytics />
-    {inject()}
-    <Navbar />
-    <Header />
-    <About />
-    <Work />
-    <Skills />
-    <Testimonial />
-    <Footer />
-  </div>
-);
+function App() {
+  inject();
+  return (
+    <div className="app">
+      <Analytics />
+      {inject()}
+      <Navbar />
+      <Header />
+      <About />
+      <Work />
+      <Skills />
+      <Testimonial />
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
