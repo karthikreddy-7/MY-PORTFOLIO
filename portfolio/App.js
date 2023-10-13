@@ -9,17 +9,19 @@ inject();
 function App() {
   inject();
   return (
-    <div className="app">
+    <>
       <Analytics />
       {inject()}
-      <Navbar />
-      <Header />
-      <About />
-      <Work />
-      <Skills />
-      <Testimonial />
-      <Footer />
-    </div>
+      <div className="app">
+        <Navbar />
+        <Header />
+        <About />
+        <Work />
+        <Skills />
+        <Testimonial />
+        <Footer />
+      </div>
+    </>
   );
 }
 
